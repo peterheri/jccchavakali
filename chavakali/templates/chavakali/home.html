@@ -1,0 +1,324 @@
+{% extends "chavakali/base.html" %}
+{ % load staticfiles %}
+{% load static %}
+{% block title %}
+<title>Joy Celebration Center</title>
+{% endblock %}
+
+{% block body %}
+<body>
+<style type="text/css">
+			.paypal_btn{
+            display: inline-block;
+            font-family: inherit;
+            font-size: 15px;
+            color: #fff;
+            text-align: center;
+            padding: 10px 10px;
+            margin: 0;
+            background:#0000FF ;
+            border: 0;
+            cursor: pointer;
+            outline: primary;
+            }
+            .paypal_btn:hover{ background: #e05c04; }
+
+		</style>
+
+
+  <!-- Navbar (sit on top) -->
+
+  <nav class="navbar navbar-expand-md navbar-dark" style="background-color:#4B004B;">
+    <button class="navbar-toggler" type="button" data-target="#navbarTogglerDemo03" data-toggle="collapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link text-light" href="{% url 'home'%}">WHAT WE DO</a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" data-toggle="dropdown">MINISTRIES</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="{% url 'mercy' %}">Mercy Ministry</a>
+                    <a class="dropdown-item" href="{% url 'outreach' %}">Outreach Ministry</a>
+                    <a class="dropdown-item" href="{% url 'men' %}">Men Ministry</a>
+                    <a class="dropdown-item" href="{% url 'women' %}">Women Ministry</a>
+                    <a class="dropdown-item" href="{% url 'couples' %}">Couples Ministry</a>
+                    <a class="dropdown-item" href="{% url 'youths' %}">Youth Ministry</a>
+                    <a class="dropdown-item" href="{% url 'teens' %}">Teens Ministry</a>
+                    <a class="dropdown-item" href="{% url 'sundayschool' %}">Sunday School Ministry</a>
+                </div>
+            <li class="nav-item">
+                <a class="nav-link text-light" href ="{% url 'wwn'%}">WOMAN WEEP NOT MINISTRIES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href ="{% url 'projects'%}">PROJECTS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href ="{% url 'founder'%}">OUR FOUNDER</a>
+            </li>
+        </ul>
+
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><i class="fas fa-band-aid"></i>
+                <input type="hidden" name="cmd" value="_s-xclick" /><i class="fas fa-band-aid"></i>
+                <input type="hidden" name="hosted_button_id" value="3B9CM4PCW34S2" /><i class="fas fa-band-aid"></i>
+                <input type="submit" value="GIVE" type="button" name="submit" title="Support Our Ministry Work!" class="paypal_btn">
+                <img alt="" border="0" src="https://www.paypal.com/en_KE/i/scr/pixel.gif" width="1" height="1" /><i class="fas fa-band-aid"></i>
+                </form>
+    </div>
+
+  </nav>
+</div>
+<script type="text/javascript">
+    $(document).ready(function()
+    {
+        $("#linkLogin").click(function()
+        {
+            $("#modalLogin").modal();
+        });
+
+        $("#btn-login").click(function()
+        {
+            $.ajax(
+            {
+                type:"POST",
+                url:"{% url 'login' %}",
+                enctype:"multipart/form-data",
+                data: new FormData($("#form-login")[0]),
+                contentType:"false",
+                dataType:"false",
+                success:function(data)
+                {
+                    console.log(data);
+                },
+                error:function(e)
+                {
+                    console.log(e);
+                },
+            });
+        });
+
+    });
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<div class="modal fade" id="modalLogin" >
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-dark">
+                <div class="text-center" align="center">
+                    <h4 class="modal-title text-light" align="center">Login</h4>
+                </div>
+                <button class="close" data-dismiss="modal" type="button">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form  id="formLogin">
+                    {% csrf_token %}
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><span class="icon-large icon-envelope"></span> </span>
+                        </div>
+                        <input class="form-control" name="email" placeholder="Your Email" type="email">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" ><span class="icon-large icon-lock"></span> </span>
+                        </div>
+                        <input type="password" class="form-control" name="password" placeholder="Password">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer text-center" align="center">
+                <div class="text-center" align="center">
+                    <button class="btn btn-outline-success" id="btn-login">Login</button>
+                    <button class="btn btn-outline-warning" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+              <div class="card card-body">
+                    We are located here
+                </div> </div>
+    </div>
+</div>
+
+<div class="jumbotron" style = "background-color:#4B004B;" >
+  <h1 class="display-4 text-light"><b>Joy Celebration Centre Chavakali - Kenya</b></h1>
+  <p class="lead display-5 text-light"><p5>Agape Fellowship Centre.</p5></p>
+  <hr class="my-4">
+  <p class="text-light">An Oasis Of God's Love and Care</p>
+    <p>
+        <a class="btn btn-primary" href="https://www.google.com/maps/@0.113806,34.730111,421m/data=!3m1!1e3?hl=en" role="button">Join Us This Sunday</a>
+    </p>
+</div>
+<div class = "jumbotron" id="divhomemissions">
+    <div class="card-deck">
+  <div class="card bg-dark" style = "background-color:#4B004B;">
+    <div class="card-body" >
+      <h5 class="card-title">Vision</h5>
+      <p class="card-text ">A growing, Bible believing community Church transforming Nations with God's Love</p>
+      <p class="card-text"><small class="text-muted">Agape JCC Vision</small></p>
+    </div>
+  </div>
+  <div class="card" style = "background-color:#4B004B;">
+    <div class="card-body">
+      <h5 class="card-title">Mission</h5>
+      <p class="card-text">
+          1. Winning Souls to the Lordship of Jesus Christ<br>
+          2. Equipping the Saints<br>
+          3. Giving Hope to the Hopeless<br>
+      </p>
+      <p class="card-text"><small class="text-muted">Agape JCC Mission</small></p>
+    </div>
+  </div>
+  <div class="card bg-info" style = "background-color:#4B004B;">
+    <div class="card-body">
+      <h5 class="card-title">Service Times</h5>
+      <p class="card-text">6AM - 9AM Intercessory Prayers<br>
+                        9AM - 10AM Worship<br>
+                        10AM - 11AM Bible Focus <br>
+                        11AM - 1PM Second Service<br>
+
+      </p>
+      <p class="card-text"><small class="text-muted">We are the Light Of the World</small></p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="jumbotron" style = "background-color:#4B004B">
+  <p class="lead display-5 text-light"><p5>Prayer Request</p5></p>
+    <div class="form-prayer w-50">
+        <form method="post" action="{% url 'prayer' %}">
+            <div class="form-group">
+                <input class="form-control" id="name" name="name" placeholder="Your Names:">
+            </div>
+            <div class="form-group">
+                <input type="tel" name="phoneNumber" class="form-control" placeholder="Your Phone Number:">
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" placeholder="Your Prayer Request" name="prayerRequest"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-outline-success btn-lg">Submit Prayer Request</button>
+            </div>
+
+            {% csrf_token %}
+        </form>
+    </div>
+  <hr class="my-4">
+  <p class="text-light">Philippians 4:6  Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God.</p>
+
+</div>
+
+<div class = "jumbotron" id="divDrone" style="height: 600px;">
+
+</div>
+<div class ="jumbotron" style ="background-color:#4B004B">
+   <footer>
+            <section class="bg-4B004B text-light">
+                  <div class="container">
+                        <div class="row">
+                              <div class="col-lg-4">
+                                    <h2>JCC Chavakali-Kenya</h2>
+                                    <p class="u-my-40">
+                                          An Oasis Of God's love and Care<br>
+                                        Gving Hope to the Hopeless<br><br>
+                                        @2020 Joy Celebration Centre<br>
+                                        All Rights Reserved
+                                    </p>
+                              </div>
+                              <div class="col-lg-2 ml-auto text-light" >
+                                    <h4 class ="text-light">Useful Links</h4>
+                                    <div class="u-h-4 u-w-50 bg-#4B004B mt-3 u-mb-40 text-light">
+                                    <ul class="list-unstyled u-lh-2 text-light">
+                                         <a href="{% url 'events' %} text-light" style="color:white" id="events">Events</a><br>
+                                         <a href="{% url 'youths' %} text-light" style="color:white" >Youths</a><br>
+                                         <a href="{% url 'teens' %} text-light" style="color:white" >Teenagers</a><br>
+                                         <a href="{% url 'sundayschool' %} text-light" style="color:white" >Sunday School</a>
+
+
+                                    </ul>
+
+
+                              </div>
+                              </div>
+                              <div class="col-lg-3 ml-auto">
+                                    <h4>Contact Info</h4>
+                                    <div class="u-h-4 u-w-50 bg-white rounded mt-3 u-mb-40"></div>
+                                    <ul class="list-unstyled">
+                                          <li class="mb-2">
+                                                <span class="icon icon-Phone2 text-primary mr-2"></span> +254722396050
+                                          </li>
+                                          <li class="mb-2">
+                                                <span class="icon icon-Mail text-primary mr-2"></span>agapechavakali@gmail.com
+                                          </li>
+                                          <li class="mb-2">
+                                                <span class="icon icon-Pointer text-primary mr-2"></span> Chavakali, Kenya
+                                          </li>
+                                    </ul>
+                                    <ul class="list-inline social mt-4">
+                                          <a href="https://www.facebook.com/JCC-Chavakali-Agape-Fellowship-223645461127111/" class="fa fa-facebook"></a>
+                                            <a href="https://twitter.com/jcc_chavakali" class="fa fa-twitter"></a>
+                                          <a href="https://www.youtube.com/channel/UC0ECR7uZJXs65Ndeio9HKQA?view_as=subscriber" class="fa fa-youtube"></a>
+                                        <a href="https://www.instagram.com/jcc_chavakali/" style="color:white" class="fa fa-instagram"></a>
+                                    </ul>
+                              </div>
+                        </div>
+                  </div>
+            </section>
+            <div class="container text-center p-4 text-light">
+                  <p class="mb-0">
+                        Build with Enam Technology Solutions
+                  </p>
+            </div>
+      </footer>
+
+</div>
+
+<style type="text/css">
+    /* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.9;
+  color : white
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  color: white;
+}
+
+/* Youtube */
+.fa-youtube {
+  color: white;
+}
+
+/* Whatsapp */
+.fa-whatsapp {
+  color: white;
+}
+</style>
+
+</body>
+{% endblock %}
+on type="submit" class="btn btn-outline-success">Submit</button>
+</div>
+
+

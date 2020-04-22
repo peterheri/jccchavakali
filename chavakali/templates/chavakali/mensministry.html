@@ -1,0 +1,220 @@
+{% extends "chavakali/base.html" %}
+{% block title %}
+<title>Mens Ministry</title>
+{% endblock %}
+
+{% block body %}
+<body>
+<style type="text/css">
+			.paypal_btn{
+            display: inline-block;
+            font-family: inherit;
+            font-size: 15px;
+            color: #fff;
+            text-align: center;
+            padding: 10px 10px;
+            margin: 0;
+            background:#0000FF ;
+            border: 0;
+            cursor: pointer;
+            outline: primary;
+            }
+            .paypal_btn:hover{ background: #e05c04; }
+
+		</style>
+
+
+  <!-- Navbar (sit on top) -->
+
+  <nav class="navbar navbar-expand-md navbar-dark" style="background-color:#383645;">
+    <button class="navbar-toggler" type="button" data-target="#navbarTogglerDemo03" data-toggle="collapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link text-light" href="{% url 'home'%}">WHAT WE DO</a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" data-toggle="dropdown">MINISTRIES</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="{% url 'mercy' %}">Mercy Ministry</a>
+                    <a class="dropdown-item" href="{% url 'outreach' %}">Outreach Ministry</a>
+                    <a class="dropdown-item" href="{% url 'men' %}">Men Ministry</a>
+                    <a class="dropdown-item" href="{% url 'women' %}">Women Ministry</a>
+                    <a class="dropdown-item" href="{% url 'couples' %}">Couples Ministry</a>
+                    <a class="dropdown-item" href="{% url 'youths' %}">Youth Ministry</a>
+                    <a class="dropdown-item" href="{% url 'teens' %}">Teens Ministry</a>
+                    <a class="dropdown-item" href="{% url 'sundayschool' %}">Sunday School Ministry</a>
+                </div>
+            <li class="nav-item">
+                <a class="nav-link text-light" href ="{% url 'wwn'%}">WOMAN WEEP NOT MINISTRIES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href ="{% url 'projects'%}">PROJECTS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href ="{% url 'founder'%}">OUR FOUNDER</a>
+            </li>
+        </ul>
+
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><i class="fas fa-band-aid"></i>
+                <input type="hidden" name="cmd" value="_s-xclick" /><i class="fas fa-band-aid"></i>
+                <input type="hidden" name="hosted_button_id" value="3B9CM4PCW34S2" /><i class="fas fa-band-aid"></i>
+                <input type="submit" value="GIVE" type="button" name="submit" title="Support Our Ministry Work!" class="paypal_btn">
+                <img alt="" border="0" src="https://www.paypal.com/en_KE/i/scr/pixel.gif" width="1" height="1" /><i class="fas fa-band-aid"></i>
+                </form>
+    </div>
+
+  </nav>
+</div>
+
+<div class="jumbotron" style="background-color:#383645">
+  <h1 class="display-4 text-light"><b>Joy Celebration Centre Chavakali.</b></h1></br>
+  <p class="lead display-5 text-light"><p5>Mens Ministry.</p5></p>
+  <hr class="my-1">
+  <p5 class="text-light">Vision : To impact Men to become like Christ</p5>
+</div>
+
+<div class = "jumbotron">
+                    <h1 class="display-6 text-dark">Mission.</h1>
+                    <p6 class="lead display-6 text-dark"><p6>The mission and purpose of this department is to develop an effective, dynamic, and growing army of men effectually living the Christian life and good role models to the family and community.</p6>
+                    <hr class="my-3">
+</div>
+
+<div class = "jumbotron" style="background-color:#383645" id="divMencover">
+                <h1 class="display-6 text-light">Responsibilities undertaken in this department.</h1></br>
+                    <p class="lead display-5 text-light">
+                          	Creating opportunities for men to have fun and fellowship, Bible study and prayer.</br>
+                          	Researching and providing resource options for individual as well as group bible studies.</br>
+                          	Raising, mentoring and training young men to be responsible future husbands and fathers.</br>
+                          	Scheduling and hosting periodic men’s retreats, seminars and conferences for capacity building in line with specific needs.</br>
+                          	Arranging and hosting entrepreneurial seminars for economic empowerment</br>
+                          	Carrying out discipleship classes for men at JCC – Agape Fellowship.</br>
+                          	Outreaching other men in the community with the gospel of Jesus Christ</br>
+                    </p>
+                 <hr class="my-3">
+
+</div>
+<div class = "jumbotron">
+                <h1 class="display-6 text-dark">These activities are helping men to : </h1></br>
+                    <p class="lead display-5 text-dark">
+                          	Spend daily quality time in prayer and Bible study.</br>
+                          	Perform priestly duties in their homes as required of those who are fathers and husbands</br>
+                          	Engage in consistent daily memorization of Scriptures.</br>
+                          	Spend a portion (2-3 hours) of one day per week in evangelistic calling.</br>
+                          	Be involved in personal discipleship, both small group and one-on-one.</br>
+                          	Spend not less than one day a month in prayer and fasting.</br>
+                          	Be involved in income generating projects to support their families and God’s work</br>
+                    </p>
+                 <hr class="my-3">
+
+</div>
+<div class="jumbotron" id="divMenfooter">
+Psalms 1:1-3</br></br>
+
+“Blessed is the man who walks not in the counsel of the ungodly,</br> nor stands in the path of sinners, </br>nor sits in the seat of the scornful;</br> But his delight is in the law of the Lord,</br> and in His law he meditates day and night.</br> He shall be like a tree planted by the rivers of water,</br> that brings forth its fruit in its season, </br>whose leaf also shall not wither; </br> and whatever he does shall prosper.”
+</div>
+<div class ="jumbotron" style ="background-color:#383645">
+   <footer>
+            <section class="bg-4B004B text-light">
+                  <div class="container">
+                        <div class="row">
+                              <div class="col-lg-4">
+                                    <h2>JCC Chavakali-Kenya</h2>
+                                    <p class="u-my-40">
+                                          An Oasis Of God's love and Care<br>
+                                        Gving Hope to the Hopeless<br><br>
+                                        @2019 Joy Celebration Centre<br>
+                                        All Rights Reserved
+                                    </p>
+                              </div>
+                              <div class="col-lg-2 ml-auto text-light" >
+                                    <h4 class ="text-light">Useful Links</h4>
+                                    <div class="u-h-4 u-w-50 bg-#4B004B mt-3 u-mb-40 text-light">
+                                    <ul class="list-unstyled u-lh-2 text-light">
+                                         <a href="{% url 'events' %} text-light" style="color:white" id="events">Events</a><br>
+                                         <a href="{% url 'youths' %} text-light" style="color:white" >Youths</a><br>
+                                         <a href="{% url 'teens' %} text-light" style="color:white" >Teenagers</a><br>
+                                         <a href="{% url 'sundayschool' %} text-light" style="color:white" >Sunday School</a>
+
+
+                                    </ul>
+
+
+                              </div>
+                              </div>
+                              <div class="col-lg-3 ml-auto">
+                                    <h4>Contact Info</h4>
+                                    <div class="u-h-4 u-w-50 bg-white rounded mt-3 u-mb-40"></div>
+                                    <ul class="list-unstyled">
+                                          <li class="mb-2">
+                                                <span class="icon icon-Phone2 text-primary mr-2"></span> +254722396050
+                                          </li>
+                                          <li class="mb-2">
+                                                <span class="icon icon-Mail text-primary mr-2"></span>agapechavakali@gmail.com
+                                          </li>
+                                          <li class="mb-2">
+                                                <span class="icon icon-Pointer text-primary mr-2"></span> Chavakali, Kenya
+                                          </li>
+                                    </ul>
+                                    <ul class="list-inline social mt-4">
+                                          <a href="https://www.facebook.com/JCC-Chavakali-Agape-Fellowship-223645461127111/" class="fa fa-facebook"></a>
+                                            <a href="https://twitter.com/jcc_chavakali" class="fa fa-twitter"></a>
+                                          <a href="https://www.youtube.com/channel/UC0ECR7uZJXs65Ndeio9HKQA?view_as=subscriber" class="fa fa-youtube"></a>
+                                        <a href="https://www.instagram.com/jcc_chavakali/" style="color:white" class="fa fa-instagram"></a>
+                                    </ul>
+                              </div>
+                        </div>
+                  </div>
+            </section>
+            <div class="container text-center p-4 text-light">
+                  <p class="mb-0">
+                        Build with Enam Technology Solutions
+                  </p>
+            </div>
+      </footer>
+
+</div>
+<style type="text/css">
+    /* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.9;
+  color : green;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  color: white;
+}
+
+/* Youtube */
+.fa-youtube {
+  color: white;
+}
+
+/* Whatsapp */
+.fa-whatsapp {
+  color: white;
+}
+</style>
+</body>
+{% endblock %}

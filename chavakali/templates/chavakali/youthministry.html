@@ -1,0 +1,236 @@
+{% extends "chavakali/base.html" %}
+{% block title %}
+<title>Youth Ministry</title>
+{% endblock %}
+
+{% block body %}
+<body>
+<style type="text/css">
+			.paypal_btn{
+            display: inline-block;
+            font-family: inherit;
+            font-size: 15px;
+            color: #fff;
+            text-align: center;
+            padding: 10px 10px;
+            margin: 0;
+            background:#0000FF ;
+            border: 0;
+            cursor: pointer;
+            outline: primary;
+            }
+            .paypal_btn:hover{ background: #e05c04; }
+
+		</style>
+
+
+  <!-- Navbar (sit on top) -->
+
+  <nav class="navbar navbar-expand-md navbar-dark" style="background-color:#000000;">
+    <button class="navbar-toggler" type="button" data-target="#navbarTogglerDemo03" data-toggle="collapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link text-light" href="{% url 'home'%}">WHAT WE DO</a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" data-toggle="dropdown">MINISTRIES</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="{% url 'mercy' %}">Mercy Ministry</a>
+                    <a class="dropdown-item" href="{% url 'outreach' %}">Outreach Ministry</a>
+                    <a class="dropdown-item" href="{% url 'men' %}">Men Ministry</a>
+                    <a class="dropdown-item" href="{% url 'women' %}">Women Ministry</a>
+                    <a class="dropdown-item" href="{% url 'couples' %}">Couples Ministry</a>
+                    <a class="dropdown-item" href="{% url 'youths' %}">Youth Ministry</a>
+                    <a class="dropdown-item" href="{% url 'teens' %}">Teens Ministry</a>
+                    <a class="dropdown-item" href="{% url 'sundayschool' %}">Sunday School Ministry</a>
+                </div>
+            <li class="nav-item">
+                <a class="nav-link text-light" href ="{% url 'wwn'%}">WOMAN WEEP NOT MINISTRIES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href ="{% url 'projects'%}">PROJECTS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href ="{% url 'founder'%}">OUR FOUNDER</a>
+            </li>
+        </ul>
+
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><i class="fas fa-band-aid"></i>
+                <input type="hidden" name="cmd" value="_s-xclick" /><i class="fas fa-band-aid"></i>
+                <input type="hidden" name="hosted_button_id" value="3B9CM4PCW34S2" /><i class="fas fa-band-aid"></i>
+                <input type="submit" value="GIVE" type="button" name="submit" title="Support Our Ministry Work!" class="paypal_btn">
+                <img alt="" border="0" src="https://www.paypal.com/en_KE/i/scr/pixel.gif" width="1" height="1" /><i class="fas fa-band-aid"></i>
+                </form>
+    </div>
+
+  </nav>
+</div>
+<div class="jumbotron text-light" style="background-color:#000000">
+  <h1 class="display-4"><b>Joy Celebration Centre Chavakali.</b></h1></br>
+  <p class="lead display-5"><p5>Youth Ministry.</p5></p>
+  <hr class="my-1">
+  <p3>To develop an effective, dynamic, and growing army of youth effectually living the Christian life as they walk with their Lord Jesus Christ.  </p3>
+</div>
+<div class="jumbotron" id="divYouthcover">
+    <h3 class="display-6">Primary Objective Of Youth Department </h3></br>
+    <p class="lead display-5">
+•	To instruct and train the youth to understand and implement the Word of God in their lives, especially as it relates to: Worship, Service, Outreach, Christian Growth, and Family.</br>
+
+•	To actively integrate the youth into all activities of church life here at JCC-Agape.  Envisioning and equipping them to lead and to serve here, now, and in the future.</br>
+
+•	To seek out lay leadership and effectively train them to work with the youth and others as part of a ministry team.</br>
+
+•	To help keep our church’s intentional-intergenerational vision foremost in everyone’s heart and ministry.</br>
+
+•	To develop an older-youth component. This would be an outreach, traveling, ministry team made up of mostly older, well-disciplined committed youth.</br>
+
+•	To work closely with all other members of the church Leaders, effectively uniting with and complementing other church ministries.</br>
+
+•	To assist families, especially families with teenagers, to assimilate into church ministry as a family, learning to minister together as a family.</br>
+
+•	To guide the church youth in cultivating a burden for -Christians and designing and implementing effective outreach and assimilation strategies.</br>
+
+    </p>
+
+</div>
+<div class = "jumbotron" style="background-color:#000000">
+    <h3 class="display-7 text-light">This department provides opportunity for youth:</h3></br>
+    <p class="lead display-5 text-light">
+•	To get to know and establish a positive relationship with each young person in the congregation.</br>
+
+•	To provide a regularly youth service that is worshipful, fun, relevant, and effective in instructing, training, nurturing, and launching youth into Christian service.</br>
+
+•	To attend leadership meetings endeavoring to work closely with other leaders to coordinate the youth activities, calendar and vision with all other areas of church life.</br>
+
+•	To undergo mentoring and coaching.</br>
+
+•	To make sure that the females in the youth group have effective, caring role-models and easy access to female counselors when appropriate.</br>
+
+•	To coordinate youth-oriented retreats, outings and camp activities.</br>
+
+•	To share their gifts and talents in all areas of the church ministry as time permits.</br>
+
+•	To set a good example in the areas of relationships, commitment, follow-through and responsible living.</br>
+
+•	In a very permissive era, help youth to establish Biblical guidelines for appropriate behavior, especially as it regards the opposite sex.</br>
+
+•	To model high standards in  their own personal, family and devotional life. Maintaining a good example in their relationships with others, studying, praying, tithing, and such.
+•	To pray for their parents, guardians and involve their parents in their activities
+
+
+    </p>
+</div>
+<div class = "jumbotron" id="divYouthfooter">
+    <h3 class="display-7"> </h3></br>
+    <p class="lead display-5 text-light"><b>
+        1 Peter 5:5-9</br></br> Likewise, you who are younger, be subject to the elders. </br>Clothe yourselves, all of you, with humility toward one another,</br> for “God opposes the proud but gives grace to the humble.”</br>Humble yourselves, therefore, under the mighty hand of God</br> so that at the proper time he may exalt you, </br>casting all your anxieties on him, </br> because he cares for you. Be sober-minded; be watchful. </br> Your adversary the devil prowls around like a roaring lion, </br> seeking someone to devour. Resist him, firm in your faith,</br>  knowing that the same kinds of suffering are being experienced by your brotherhood</br> throughout the world.</b>
+
+
+    </p>
+</div>
+<div class ="jumbotron" style ="background-color:#000000">
+   <footer>
+            <section class="bg-4B004B text-light">
+                  <div class="container">
+                        <div class="row">
+                              <div class="col-lg-4">
+                                    <h2>JCC Chavakali-Kenya</h2>
+                                    <p class="u-my-40">
+                                          An Oasis Of God's love and Care<br>
+                                        Gving Hope to the Hopeless<br><br>
+                                        @2019 Joy Celebration Centre<br>
+                                        All Rights Reserved
+                                    </p>
+                              </div>
+                              <div class="col-lg-2 ml-auto text-light" >
+                                    <h4 class ="text-light">Useful Links</h4>
+                                    <div class="u-h-4 u-w-50 bg-#4B004B mt-3 u-mb-40 text-light">
+                                    <ul class="list-unstyled u-lh-2 text-light">
+                                         <a href="{% url 'events' %} text-light" style="color:white" id="events">Events</a><br>
+                                         <a href="{% url 'mercy' %} text-light" style="color:white" >Mercy Ministry</a><br>
+                                         <a href="{% url 'teens' %} text-light" style="color:white" >Teenagers</a><br>
+                                         <a href="{% url 'sundayschool' %} text-light" style="color:white" >Sunday School</a>
+
+
+                                    </ul>
+
+
+                              </div>
+                              </div>
+                              <div class="col-lg-3 ml-auto">
+                                    <h4>Contact Info</h4>
+                                    <div class="u-h-4 u-w-50 bg-white rounded mt-3 u-mb-40"></div>
+                                    <ul class="list-unstyled">
+                                          <li class="mb-2">
+                                                <span class="icon icon-Phone2 text-primary mr-2"></span> +254722396050
+                                          </li>
+                                          <li class="mb-2">
+                                                <span class="icon icon-Mail text-primary mr-2"></span>agapechavakali@gmail.com
+                                          </li>
+                                          <li class="mb-2">
+                                                <span class="icon icon-Pointer text-primary mr-2"></span> Chavakali, Kenya
+                                          </li>
+                                    </ul>
+                                    <ul class="list-inline social mt-4">
+                                          <a href="https://www.facebook.com/JCC-Chavakali-Agape-Fellowship-223645461127111/" class="fa fa-facebook"></a>
+                                            <a href="https://twitter.com/jcc_chavakali" class="fa fa-twitter"></a>
+                                          <a href="https://www.youtube.com/channel/UC0ECR7uZJXs65Ndeio9HKQA?view_as=subscriber" class="fa fa-youtube"></a>
+                                        <a href="https://www.instagram.com/jcc_chavakali/" style="color:white" class="fa fa-instagram"></a>
+                                    </ul>
+                              </div>
+                        </div>
+                  </div>
+            </section>
+            <div class="container text-center p-4 text-light">
+                  <p class="mb-0">
+                        Build with Enam Technology Solutions
+                  </p>
+            </div>
+      </footer>
+
+</div>
+<style type="text/css">
+    /* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.9;
+  color : green;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  color: white;
+}
+
+/* Youtube */
+.fa-youtube {
+  color: white;
+}
+
+/* Whatsapp */
+.fa-whatsapp {
+  color: white;
+}
+</style>
+</body>
+{% endblock %}

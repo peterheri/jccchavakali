@@ -1,0 +1,244 @@
+{% extends "chavakali/base.html" %}
+{% block title %}
+<title>Teens Ministry</title>
+{% endblock %}
+
+{% block body %}
+<body>
+<style type="text/css">
+			.paypal_btn{
+            display: inline-block;
+            font-family: inherit;
+            font-size: 15px;
+            color: #fff;
+            text-align: center;
+            padding: 10px 10px;
+            margin: 0;
+            background:#0000FF ;
+            border: 0;
+            cursor: pointer;
+            outline: primary;
+            }
+            .paypal_btn:hover{ background: #e05c04; }
+
+		</style>
+
+
+  <!-- Navbar (sit on top) -->
+
+  <nav class="navbar navbar-expand-md navbar-dark" style="background-color:#263859;">
+    <button class="navbar-toggler" type="button" data-target="#navbarTogglerDemo03" data-toggle="collapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link text-light" href="{% url 'home'%}">WHAT WE DO</a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" data-toggle="dropdown">MINISTRIES</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="{% url 'mercy' %}">Mercy Ministry</a>
+                    <a class="dropdown-item" href="{% url 'outreach' %}">Outreach Ministry</a>
+                    <a class="dropdown-item" href="{% url 'men' %}">Men Ministry</a>
+                    <a class="dropdown-item" href="{% url 'women' %}">Women Ministry</a>
+                    <a class="dropdown-item" href="{% url 'couples' %}">Couples Ministry</a>
+                    <a class="dropdown-item" href="{% url 'youths' %}">Youth Ministry</a>
+                    <a class="dropdown-item" href="{% url 'teens' %}">Teens Ministry</a>
+                    <a class="dropdown-item" href="{% url 'sundayschool' %}">Sunday School Ministry</a>
+                </div>
+            <li class="nav-item">
+                <a class="nav-link text-light" href ="{% url 'wwn'%}">WOMAN WEEP NOT MINISTRIES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href ="{% url 'projects'%}">PROJECTS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href ="{% url 'founder'%}">OUR FOUNDER</a>
+            </li>
+        </ul>
+
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><i class="fas fa-band-aid"></i>
+                <input type="hidden" name="cmd" value="_s-xclick" /><i class="fas fa-band-aid"></i>
+                <input type="hidden" name="hosted_button_id" value="3B9CM4PCW34S2" /><i class="fas fa-band-aid"></i>
+                <input type="submit" value="GIVE" type="button" name="submit" title="Support Our Ministry Work!" class="paypal_btn">
+                <img alt="" border="0" src="https://www.paypal.com/en_KE/i/scr/pixel.gif" width="1" height="1" /><i class="fas fa-band-aid"></i>
+                </form>
+    </div>
+
+  </nav>
+</div>
+<div class="jumbotron text-light" style="background-color:#263859">
+  <h1 class="display-4"><b>Joy Celebration Centre Chavakali.</b></h1></br>
+  <p class="lead display-5"><p5>Teens Ministry.</p5></p>
+  <hr class="my-1">
+  <p3>Vision : To mold God-fearing individuals who are deeply grounded in the Word of God and who are well founded in all spheres of their lives in God (Proverbs 22:6).</p3>
+</div>
+<div class="jumbotron" id="divTeenscover">
+    <h3 class="display-6">Mission</h3>
+    <p class="lead display-5">
+            <b>The program offers an opportunity to plant a seed and water it, and let God make it grow in the lives of teenagers. <br>The foundation of the program has been laid down by Jesus and He has appointed among us the expert builders.<br> These builders (teachers, mentors) use their experiences, talents and gifting in their lives to build the lives of teenagers.<br> Hence, create a life (building) that radiates the fullness and fear of God (1Corinthians 3:6-11).</br></br>
+        Objectives </br>
+1.	Mold the teens in the various areas of their lives with God taking the centre stage.</br>
+2.	Encourage the teens to develop interest/create an interest in living for God.</br>
+3.	Teach teens how to actualize the Word of God in the various situations of their lives.</br>
+4.	Build the self-esteem and confidence of the teens.</br>
+5.	Explore and Develop the abilities, talents and potential that are teens.</br>
+</b>
+    </p>
+</div>
+<div class = "jumbotron id=divTeensfooter" style="background-color:#263859">
+    <h3 class="display-7 text-light">ELEMENTS OF THE PROGRAM</h3></br>
+<div class="card-deck">
+  <div class="card bg-info" style = "background-color:#4B004B;">
+    <div class="card-body">
+
+      <h5 class="card-title text-light">Bible Study/Interaction</h5>
+        <p class="card-text text-light">The teens are grouped and given topics to discuss. The topics are based on the various issues that the teens experience and situations that they go through. Each topic is explored from a Biblical perspective and how the situation can be solved based on the Word of God. The small groups provide an ample environment for the teens to interact and share. This enhances their communication skills and spiritual growth.</br></br>
+
+      <p class="card-text"><small class="text-light">Train your child in the ways of the Lord</small></p>
+    </div>
+  </div>
+  <div class="card mb-3" style = "background-color:#5B2C6F;">
+    <div class="card-body">
+      <h5 class="card-title text-light">Tution</h5>
+      <p class="card-text text-light"> This focuses on the various assignments that the teens will have been given to do over the holidays by their respective schools. The teens are grouped according to their various classes and have a teacher/supervisor. Since they attend different schools, this provides an opportunity for them to share knowledge and form forums and discussion groups. In addition, weak students have a chance to improve in their studies through the discussions and forums.</p>
+      <p class="card-text"><small class="text-light">We also help them to improve in their academics</small></p>
+    </div>
+  </div>
+  <div class="card bg-dark" style = "background-color:#4B004B;">
+    <div class="card-body">
+      <h5 class="card-title text-light">Retreat</h5>
+      <p class="card-text text-light">Retreat offers the teens an opportunity to explore the various tourist sites in the country, thereby, appreciating the marvelous works of God. The teens also have a chance to visit children homes and take part in giving back to the community where possible.
+        A request is made to the church programming to give the teens one Sunday during the vacations to be incorporated into the services.  This build their confidence and encourage them in serving the Lord.
+        </p>
+      <p class="card-text"><small class="text-light">Teens love retreats</small></p>
+    </div>
+  </div>
+    <div class="card bg-danger" style = "background-color:#4B004B;">
+    <div class="card-body">
+
+      <h5 class="card-title text-light">Career Talk/Advice</h5>
+        <p class="card-text text-light">The teens are at a stage where they are making choices regarding the career paths they would like to pursue. Many of them are inclined to the known career paths and may not know what it takes to make it in that career. Therefore, professionals from different careers are invited to give advice to the teens and set them on the right path that leads to that career. It  also provide an opportunity to introduce the teens to other careers that they may not have known.
+
+    </div>
+  </div>
+    <div class="card bg-success" style = "background-color:#4B004B;">
+    <div class="card-body">
+      <h5 class="card-title text-light">Developing Talents/Abilities</h5>
+      <p class="card-text text-light">God has bestowed upon the teens wonderful and great talents, abilities and gifting, which bring glory to God.</br></br>  The teens will are encouraged to discover and explore their talents and abilities and use them in various ministries in the church.
+        </p>
+    </div>
+  </div>
+</div>
+</div>
+<div class = "jumbotron" id="divTeensfooter">
+    <h3 class="display-7">Teenagers</h3></br>
+    <p class="lead display-5 text-light"><b>
+        Isaiah 40: 29 </br>He gives strength to the weary and increases the power of the weak.</br>Even youths grow tired and weary, and young men stumble and fall;</br> but those who hope in the LORD will renew their strength.</br> They will soar on wings like eagles; </br> they will run and not grow weary, </br> they will walk and not be faint.</br></br>
+        Jeremiah 29:11 </br> For I know the plans I have for you,” declares the LORD,</br> “plans to prosper you and not to harm you, </br>plans to give you hope and a future.
+    </p></b>
+</div>
+<div class ="jumbotron" style ="background-color:#263859">
+   <footer>
+            <section class="bg-4B004B text-light">
+                  <div class="container">
+                        <div class="row">
+                              <div class="col-lg-4">
+                                    <h2>JCC Chavakali-Kenya</h2>
+                                    <p class="u-my-40">
+                                          An Oasis Of God's love and Care<br>
+                                        Gving Hope to the Hopeless<br><br>
+                                        @2019 Joy Celebration Centre<br>
+                                        All Rights Reserved
+                                    </p>
+                              </div>
+                              <div class="col-lg-2 ml-auto text-light" >
+                                    <h4 class ="text-light">Useful Links</h4>
+                                    <div class="u-h-4 u-w-50 bg-#4B004B mt-3 u-mb-40 text-light">
+                                    <ul class="list-unstyled u-lh-2 text-light">
+                                         <a href="{% url 'events' %} text-light" style="color:white" id="events">Events</a><br>
+                                         <a href="{% url 'mercy' %} text-light" style="color:white" >Mercy Ministry</a><br>
+                                         <a href="{% url 'teens' %} text-light" style="color:white" >Teenagers</a><br>
+                                         <a href="{% url 'sundayschool' %} text-light" style="color:white" >Sunday School</a>
+
+
+                                    </ul>
+
+
+                              </div>
+                              </div>
+                              <div class="col-lg-3 ml-auto">
+                                    <h4>Contact Info</h4>
+                                    <div class="u-h-4 u-w-50 bg-white rounded mt-3 u-mb-40"></div>
+                                    <ul class="list-unstyled">
+                                          <li class="mb-2">
+                                                <span class="icon icon-Phone2 text-primary mr-2"></span> +254722396050
+                                          </li>
+                                          <li class="mb-2">
+                                                <span class="icon icon-Mail text-primary mr-2"></span>agapechavakali@gmail.com
+                                          </li>
+                                          <li class="mb-2">
+                                                <span class="icon icon-Pointer text-primary mr-2"></span> Chavakali, Kenya
+                                          </li>
+                                    </ul>
+                                    <ul class="list-inline social mt-4">
+                                          <a href="https://www.facebook.com/JCC-Chavakali-Agape-Fellowship-223645461127111/" class="fa fa-facebook"></a>
+                                            <a href="https://twitter.com/jcc_chavakali" class="fa fa-twitter"></a>
+                                          <a href="https://www.youtube.com/channel/UC0ECR7uZJXs65Ndeio9HKQA?view_as=subscriber" class="fa fa-youtube"></a>
+                                        <a href="https://www.instagram.com/jcc_chavakali/" style="color:white" class="fa fa-instagram"></a>
+                                    </ul>
+                              </div>
+                        </div>
+                  </div>
+            </section>
+            <div class="container text-center p-4 text-light">
+                  <p class="mb-0">
+                        Build with Enam Technology Solutions
+                  </p>
+            </div>
+      </footer>
+
+</div>
+<style type="text/css">
+    /* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.9;
+  color : green;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  color: white;
+}
+
+/* Youtube */
+.fa-youtube {
+  color: white;
+}
+
+/* Whatsapp */
+.fa-whatsapp {
+  color: white;
+}
+</style>
+</body>
+{% endblock %}

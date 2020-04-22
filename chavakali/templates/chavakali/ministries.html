@@ -1,0 +1,48 @@
+{% extends "chavakali/base.html" %}
+{% block title %}
+<title>Ministries</title>
+{% endblock %}
+
+{% block body %}
+<body>
+<!-- Navbar (sit on top) -->
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark nav-justified-center fixed-top">
+    <a class ="navbar-brand" href="#"></a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-1">
+        <li class = "nav-item active">
+          <a class="nav-link" href="{% url 'home'%}">WHAT WE DO<span class="sr-only">(current)</span></a>
+        </li>
+    <br class="nav-dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">MINISTRIES</a></br>
+            <div class ="dropdown-menu">
+                <a class="dropdown-item text-dark" href="{% url 'mercy' %}">Mercy Ministry</a>
+                         <a class="dropdown-item text-dark" href="{% url 'men' %}">Men Ministry</a>
+                <a class="dropdown-item text-dark" href="{% url 'women' %}">Womens Ministry</a>
+                <a class="dropdown-item text-dark" href="{% url 'couples' %}">Couples Ministry</a>
+                <a class="dropdown-item text-dark" href="{% url 'youths' %}">Youths Ministry</a>
+                <a class="dropdown-item text-dark" href="{% url 'teens' %}">Teens Ministry</a>
+                <a class="dropdown-item text-dark" href="{% url 'sundayschool' %}">Sunday School Ministry</a>
+                <div class="dropdown-divider"></div>
+            </div>
+    </li>
+
+                <a class="nav-item nav-link text-light" href="{% url 'wwn' %}">WOMAN WEEP NOT MINISTRY </a>
+                <a class="nav-item nav-link" href="{% url 'projects' %}">PROJECTS</a>
+                <a class="nav-item nav-link" href="{% url 'events' %}">UPCOMING EVENTS</a>
+                <a class="nav-item nav-link" href="{% url 'founder' %}">OUR FOUNDER</a>
+                <a class="nav-item nav-link" href="{% url 'sermons' %}">SERMONS</a>
+                <a class="nav-item nav-link" href="{% url 'gallery' %}">GALLERY</a>
+                <button type="button" class="btn content-end btn-outline-primary">GIVE NOW</button>
+  </nav>
+</div>
+<div class="jumbotron">
+  <h1 class="display-4"><b>Joy Celebration Centre Chavakali.</b></h1>
+  <p class="lead display-5"><p5>Agape Fellowship Centre.</p5></p>
+  <hr class="my-1">
+  <p3>Ministries </p3>
+</div>
+
+</body>
+{% endblock%}

@@ -1,0 +1,229 @@
+{% extends "chavakali/base.html" %}
+{% block title %}
+<title>Sunday School Ministry</title>
+{% endblock %}
+
+{% block body %}
+<body>
+<style type="text/css">
+			.paypal_btn{
+            display: inline-block;
+            font-family: inherit;
+            font-size: 15px;
+            color: #fff;
+            text-align: center;
+            padding: 10px 10px;
+            margin: 0;
+            background:#0000FF ;
+            border: 0;
+            cursor: pointer;
+            outline: primary;
+            }
+            .paypal_btn:hover{ background: #e05c04; }
+
+		</style>
+
+
+  <!-- Navbar (sit on top) -->
+
+  <nav class="navbar navbar-expand-md navbar-dark" style="background-color:#000000;">
+    <button class="navbar-toggler" type="button" data-target="#navbarTogglerDemo03" data-toggle="collapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link text-light" href="{% url 'home'%}">WHAT WE DO</a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" data-toggle="dropdown">MINISTRIES</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="{% url 'mercy' %}">Mercy Ministry</a>
+                    <a class="dropdown-item" href="{% url 'outreach' %}">Outreach Ministry</a>
+                    <a class="dropdown-item" href="{% url 'men' %}">Men Ministry</a>
+                    <a class="dropdown-item" href="{% url 'women' %}">Women Ministry</a>
+                    <a class="dropdown-item" href="{% url 'couples' %}">Couples Ministry</a>
+                    <a class="dropdown-item" href="{% url 'youths' %}">Youth Ministry</a>
+                    <a class="dropdown-item" href="{% url 'teens' %}">Teens Ministry</a>
+                    <a class="dropdown-item" href="{% url 'sundayschool' %}">Sunday School Ministry</a>
+                </div>
+            <li class="nav-item">
+                <a class="nav-link text-light" href ="{% url 'wwn'%}">WOMAN WEEP NOT MINISTRIES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href ="{% url 'projects'%}">PROJECTS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href ="{% url 'founder'%}">OUR FOUNDER</a>
+            </li>
+        </ul>
+
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><i class="fas fa-band-aid"></i>
+                <input type="hidden" name="cmd" value="_s-xclick" /><i class="fas fa-band-aid"></i>
+                <input type="hidden" name="hosted_button_id" value="3B9CM4PCW34S2" /><i class="fas fa-band-aid"></i>
+                <input type="submit" value="GIVE" type="button" name="submit" title="Support Our Ministry Work!" class="paypal_btn">
+                <img alt="" border="0" src="https://www.paypal.com/en_KE/i/scr/pixel.gif" width="1" height="1" /><i class="fas fa-band-aid"></i>
+                </form>
+    </div>
+
+  </nav>
+</div>
+<div class="jumbotron" style="background-color:#000000">
+  <h1 class="display-4 text-light"><b>Joy Celebration Centre Chavakali.</b></h1></br>
+  <p class="lead display-5 text-light"><p5>Sunday School Ministry.</p5></p>
+  <hr class="my-1">
+  <p5 class="text-light">Vision : To impact Children to become like Christ</p5>
+</div>
+
+<div class = "jumbotron" id="divSundayschoolcover">
+                    <h1 class="display-6 text-light">Mission.</h1><br>
+                    <p6 class = "lead display-6 text-light">Mathew 19:14<br>
+                    Let the Little Children come to me, and do not hinder them,for the Kingdom of Heaven belongs to such as these
+                    </p6><br><br>
+                    <p6 class="lead display-6 text-light"><p6>Teaching, Directing and Sharing Knowledge of Jesus Christ to Children for their Edification and Fulfillment,<br>
+                        to be servants of the Light of God through Jesus Christ.<br><br>
+
+                    We are Raising up the next Generation for Christ. </p6>
+
+                        <p6 class = "lead display-6 text-light">Our Vision is to equip children to be well grounded in God's Word, <br>
+                            build a Godly Character, develop spiritual gifts and definitely accept <br> Jesus as their saviour </p6>
+                    <hr class="my-3">
+</div>
+
+<div class = "jumbotron" style="background-color:#000000">
+                <h1 class="display-6 text-light">Responsibilities undertaken in this department.</h1></br>
+                    <p class="lead display-5 text-light">
+                         Here at Joy Celebration Center we believe that God wants to give a full life to his children, and God desires to rise up a generation of Spirit Filled Children<br> who love Him and testify about the amazing things He has done.<br><br>
+                        Our Desire is to partner with parents in helping their children establish a solid Bibilical foundation upon which to build the lives of their Children.<br><br>
+
+                        We help our kids to :<br><br>
+
+                        K - Know God and His Word<br>
+                        I - Involve in Friendship and Fellowship<br>
+                        D - Develop Spiritual Gifts<br>
+                        S - Serve in the church and Community<br>
+                    </p>
+                 <hr class="my-3">
+
+</div>
+<div class = "jumbotron" id="divSundayschoolfooter">
+                <h1 class="display-6 text-light"></h1></br>
+                    <p class="lead display-5 text-light">
+                        <b>Psalms 127:3-5</b><br>
+                        Children are a heritage from the Lord, offspring a reward from him<br>
+                        Like Arrows in the hands of a warrior are children born in one's youth<br>
+                        Blessed is the man whose quiver is full of them<br>
+                        They will not be put to shame when they contend with their opponents in court<br><br>
+
+                        <b>Provebs 22:6</b><br>
+                        Train up a child in the way he should go;even when he is old he will not depart from it<br><br>
+
+                        <b>Provebs 29:17</b><br>
+                        Discipline your children, and they will give you peace; they will bring you the delights you desire<br>
+                    </p>
+                 <hr class="my-3">
+
+</div>
+<div class ="jumbotron" style ="background-color:#000000">
+   <footer>
+            <section class="bg-4B004B text-light">
+                  <div class="container">
+                        <div class="row">
+                              <div class="col-lg-4">
+                                    <h2>JCC Chavakali-Kenya</h2>
+                                    <p class="u-my-40">
+                                          An Oasis Of God's love and Care<br>
+                                        Gving Hope to the Hopeless<br><br>
+                                        @2019 Joy Celebration Centre<br>
+                                        All Rights Reserved
+                                    </p>
+                              </div>
+                              <div class="col-lg-2 ml-auto text-light" >
+                                    <h4 class ="text-light">Useful Links</h4>
+                                    <div class="u-h-4 u-w-50 bg-#4B004B mt-3 u-mb-40 text-light">
+                                    <ul class="list-unstyled u-lh-2 text-light">
+                                         <a href="{% url 'events' %} text-light" style="color:white" id="events">Events</a><br>
+                                         <a href="{% url 'mercy' %} text-light" style="color:white" >Mercy Ministry</a><br>
+                                         <a href="{% url 'teens' %} text-light" style="color:white" >Teenagers</a><br>
+                                         <a href="{% url 'sundayschool' %} text-light" style="color:white" >Sunday School</a>
+
+
+                                    </ul>
+
+
+                              </div>
+                              </div>
+                              <div class="col-lg-3 ml-auto">
+                                    <h4>Contact Info</h4>
+                                    <div class="u-h-4 u-w-50 bg-white rounded mt-3 u-mb-40"></div>
+                                    <ul class="list-unstyled">
+                                          <li class="mb-2">
+                                                <span class="icon icon-Phone2 text-primary mr-2"></span> +254722396050
+                                          </li>
+                                          <li class="mb-2">
+                                                <span class="icon icon-Mail text-primary mr-2"></span>agapechavakali@gmail.com
+                                          </li>
+                                          <li class="mb-2">
+                                                <span class="icon icon-Pointer text-primary mr-2"></span> Chavakali, Kenya
+                                          </li>
+                                    </ul>
+                                    <ul class="list-inline social mt-4">
+                                          <a href="https://www.facebook.com/JCC-Chavakali-Agape-Fellowship-223645461127111/" class="fa fa-facebook"></a>
+                                            <a href="https://twitter.com/jcc_chavakali" class="fa fa-twitter"></a>
+                                          <a href="https://www.youtube.com/channel/UC0ECR7uZJXs65Ndeio9HKQA?view_as=subscriber" class="fa fa-youtube"></a>
+                                        <a href="https://www.instagram.com/jcc_chavakali/" style="color:white" class="fa fa-instagram"></a>
+                                    </ul>
+                              </div>
+                        </div>
+                  </div>
+            </section>
+            <div class="container text-center p-4 text-light">
+                  <p class="mb-0">
+                        Build with Enam Technology Solutions
+                  </p>
+            </div>
+      </footer>
+
+</div>
+<style type="text/css">
+    /* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.9;
+  color : green;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  color: white;
+}
+
+/* Youtube */
+.fa-youtube {
+  color: white;
+}
+
+/* Whatsapp */
+.fa-whatsapp {
+  color: white;
+}
+</style>
+</body>
+{% endblock %}

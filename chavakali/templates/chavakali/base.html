@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+
+    <meta charset="UTF-8">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="{% static 'chavakali/img/favicon/logo.jpg' type='image/x-icon' %}" height="355px" width="320px">
+    {% block title %}
+    <title>Peter Heri</title>
+    {% endblock %}
+    <style>
+        #divMission
+        {
+            background-image:url("{% static 'chavakali/img/mercy_ministry/overview.png' %}");
+            background-size:cover;
+            background-repeat:no-repeat;
+            color:white;
+        }
+        .textMission
+        {
+            background-color:rgba(0,0,0,0.1);
+        }
+        #divDrone
+        {
+            background-image:url("{% static 'chavakali/img/drone/chava.gif' %}");
+            background-size:cover;
+            background-repeat:no-repeat
+            color:white;
+        }
+        .textDrone
+        {
+            background-color:rgba(0,0,0,0.1);
+        }
+        #divTechnicalAreas
+        {
+            background-image:url("{% static 'chavakali/img/mercy_ministry/tech.jpg' %}");
+            background-size:cover;
+            background-repeat:no-repeat;
+            color:white;
+        }
+        .textMission
+        {
+            background-color:rgba(0,0,0,0.1);
+        }
+        #divhomemissions
+        {
+            background-image:url("{% static 'chavakali/img/home/JCC.JPG' %}");
+            background-size:cover;
+            background-repeat:no-repeat;
+            color:white;
+        }
+        .texthomemission
+        {
+            background-color:rgba(0,0,0,0.1);
+        }
+        #divMercycover
+        {
+            background-image:url("{% static 'chavakali/img/mercy_ministry/footer3.jpg' %}");
+            background-size:cover;
+            background-repeat:no-repeat;
+            color:white;
+        }
+        .textMercycover
+        {
+            background-color:rgba(0,0,0,0.1);
+        }
+        #divMercyfooter
+        {
+            background-image:url("{% static 'chavakali/img/mercy_ministry/new.jpg' %}");
+            background-size:cover;
+            background-repeat:no-repeat;
+            background-position:center;
+            color:white;
+        }
+        .textMercyfooter
+        {
+            background-color:rgba(0,0,0,0.1);
+        }
+        #divMencover
+        {
+            background-image:url("{% static 'chavakali/img/menministry/mencover.jpg' %}");
+            background-size:cover;
+            background-repeat:no-repeat;
+            color:white;
+        }
+        .textMencover
+        {
+            background-color:rgba(0,0,0,0.1);
+        }
+        #divMenfooter
+        {
+            background-image:url("{% static 'chavakali/img/menministry/menfooter.jpg' %}");
+            background-size:cover;
+            background-repeat:no-repeat;
+            color:white;
+        }
+        .textMenfooter
+        {
+            background-color:rgba(0,0,0,0.1);
+        }
+        #divWomencover
+        {
+            background-image:url("{% static 'chavakali/img/Women/women.jpg' %}");
+            background-size:cover;
+            background-repeat:no-repeat;
+            color:white;
+        }
+        .textWomencover
+        {
+            background-color:rgba(0,0,0,0.1);
+        }
+        #divWomenfooter
+        {
+            background-image:url("{% static 'chavakali/img/Women/womenfooter.jpg' %}");
+            background-size:cover;
+            background-repeat:no-repeat;
+            color:white;
+        }
+        .textWomenfooter
+        {
+            background-color:rgba(0,0,0,0.1);
+        }
+        #divCouplescover
+        {
+            background-image:url("{% static 'chavakali/img/couples/mugodo.jpg' %}");
+            background-size:cover;
+            background-repeat:no-repeat;
+            color:white;
+        }
+        .textCouplescover
+        {
+            background-color:rgba(0,0,0,0.1);
+        }
+        #divCouplesfooter
+        {
+            background-image:url("{% static 'chavakali/img/couples/church.jpg' %}");
+            background-size:cover;
+            background-repeat:no-repeat;
+            color:white;
+        }
+        .textCouplesfooter
+        {
+            background-color:rgba(0,0,0,0.1);
+        }
+        #divYouthcover
+        {
+            background-image:url("{% static 'chavakali/img/youth/agnes.jpg' %}");
+            background-size:cover;
+            background-repeat:no-repeat;
+            color:white;
+        }
+        .textYouthcover
+        {
+            background-color:rgba(0,0,0,0.1);
+        }
+        #divYouthfooter
+        {
+            background-image:url("{% static 'chavakali/img/youth/youth.jpg' %}");
+            background-size:cover;
+            background-repeat:no-repeat;
+            color:white;
+        }
+        .textYouthfooter
+        {
+            background-color:rgba(0,0,0,0.1);
+        }
+        #divTeenscover
+        {
+            background-image:url("{% static 'chavakali/img/teens/tanya.jpg' %}");
+            background-size:cover;
+            background-repeat:no-repeat;
+            color:white;
+        }
+        .textTeenscover
+        {
+            background-color:rgba(0,0,0,0.1);
+        }
+        #divTeensfooter
+        {
+            background-image:url("{% static 'chavakali/img/teens/teens.jpg' %}");
+            background-size:cover;
+            background-repeat:no-repeat;
+            color:white;
+        }
+        .textTeensfooter
+        {
+            background-color:rgba(0,0,0,0.1);
+        }#divSundayschoolcover
+        {
+            background-image:url("{% static 'chavakali/img/sundayschool/sunday.jpg' %}");
+            background-size:cover;
+            background-repeat:no-repeat;
+            color:white;
+        }
+        .textSundayschoolcover
+        {
+            background-color:rgba(0,0,0,0.1);
+        }
+        #divSundayschoolfooter
+        {
+            background-image:url("{% static 'chavakali/img/sundayschool/sanya.jpg' %}");
+            background-size:cover;
+            background-repeat:no-repeat;
+            color:white;
+        }
+        .textSundayschoolfooter
+        {
+            background-color:rgba(0,0,0,0.1);
+        }
+        #divWwncover
+        {
+            background-image:url("{% static 'chavakali/img/wwn/mellen.JPG' %}");
+            background-size:cover;
+            background-repeat:no-repeat;
+            color:white;
+        }
+        .textWwncopipver
+        {
+            background-color:rgba(0,0,0,0.1);
+        }
+        #divWwnfooter
+        {
+            background-image:url("{% static 'chavakali/img/wwn/wwn.jpg' %}");
+            background-size:cover;
+            background-repeat:no-repeat;
+            color:white;
+        }
+        .textWwnfooter
+        {
+            background-color:rgba(0,0,0,0.1);
+        }
+        #divBishop
+        {
+            background-image:url("{% static 'chavakali/img/founder/Bishop.jpg' %}");
+            background-size:cover;
+            background-repeat:no-repeat;
+            color:white;
+        }
+        .textBishop
+        {
+            background-color:rgba(0,0,0,0.1);
+        }
+        #divReverend
+        {
+            background-image:url("{% static 'chavakali/img/founder/rev.jpg' %}");
+            background-size:cover;
+            background-repeat:no-repeat;
+            color:white;
+        }
+        .textReverend
+        {
+            background-color:rgba(0,0,0,0.1);
+        }
+        #divEventone
+        {
+            background-image:url("{% static 'chavakali/img/events/leaders.jpg' %}");
+            background-size:cover;
+            background-repeat:no-repeat;
+            color:white;
+        }
+        .textEventone
+        {
+            background-color:rgba(0,0,0,0.1);
+        }
+        #divEventtwo
+        {
+            color:white;
+        }
+        .textEventtwo
+        {
+            background-color:rgba(0,0,0,0.1);
+        }
+        #divEventthree
+        {
+            background-image:url("{% static 'chavakali/img/events/soon.png' %}");
+            background-size:cover;
+            background-repeat:no-repeat;
+            color:white;
+        }
+        .textEventthree
+        {
+            background-color:rgba(0,0,0,0.1);
+        }
+        #divProjectone
+        {
+            background-image:url("{% static 'chavakali/img/projects/project1.gif' %}");
+            background-size:cover;
+            background-repeat:no-repeat;
+            color:white;
+        }
+        .textProjectone
+        {
+            background-color:rgba(0,0,0,0.1);
+        }
+        #divProjecttwo
+        {
+            background-image:url("{% static 'chavakali/img/projects/soon.png' %}");
+            background-size:cover;
+            background-repeat:no-repeat;
+            color:white;
+        }
+        .textProjecttwo
+        {
+            background-color:rgba(0,0,0,0.1);
+        }
+        #divProjectthree
+        {
+            background-image:url("{% static 'chavakali/img/projects/soon.png' %}");
+            background-size:cover;
+            background-repeat:no-repeat;
+            color:white;
+        }
+        .textProjectthree
+        {
+            background-color:rgba(0,0,0,0.1);
+        }
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="{% static 'chavakali/css/bootstrap.min.css' %}">
+        <script type="text/javascript" src="{% static 'chavakali/js/jquery-3.3.1.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'chavakali/js/popper.min.js'%}"></script>
+        <script type="text/javascript" src="{% static 'chavakali/js/bootstrap.min.js' %}"></script>
+        <link rel="stylesheet" href="{% static 'chavakali/css/bootstrap.icon-large.min.css' %}">
+
+
+
+    {% for image in images %}
+        {% if image.name == "background image" %}
+
+
+    <style type="text/css">
+        body {
+         background-image: url("{{image.image.url}}");
+         -webkit-background-size: cover;
+         -moz-background-size: cover;
+         -o-background-size: cover;
+         background-size: cover;
+        }
+
+        .panel-default {
+          opacity: 0;
+          margin-top:30px;
+        }
+
+        .form-group.last {
+          margin-bottom:0px;
+        }
+
+        .container{
+          margin: 0 auto;
+        }
+        body
+
+
+     </style>
+
+   {% endif %}
+  {% endfor %}
+
+</head>
+<body>
+		{% block body %}
+
+<style>
+    body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+div {
+    width: 100vw;
+    height: 100vh;
+}
+</style>
+        <style type="text/css">
+    /* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.9;
+  color : green;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  color: white;
+}
+
+/* Youtube */
+.fa-youtube {
+  color: white;
+}
+
+/* Whatsapp */
+.fa-whatsapp {
+  color: white;
+}
+</style>
+		{% endblock %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/main.css" />
+</body>
+
+</html>

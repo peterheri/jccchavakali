@@ -1,0 +1,236 @@
+{% extends "chavakali/base.html" %}
+{% block title %}
+{% load static %}
+
+<title>Women Weep Not Ministry</title>
+{% endblock %}
+
+{% block body %}
+{% for menuimage in menuimages %}
+		{% if forloop.first %}
+		<style type="text/css">
+			#div-menu
+			{
+
+				background-image: url("{{menuimage.image.url}}");
+				background-repeat:no-repeat;
+				background-size:100% 150%;
+			}
+		</style>
+		{%endif%}
+
+	{% endfor %}
+
+<br>
+<body>
+<style type="text/css">
+			.paypal_btn{
+            display: inline-block;
+            font-family: inherit;
+            font-size: 15px;
+            color: #fff;
+            text-align: center;
+            padding: 10px 10px;
+            margin: 0;
+            background:#0000FF ;
+            border: 0;
+            cursor: pointer;
+            outline: primary;
+            }
+            .paypal_btn:hover{ background: #e05c04; }
+
+		</style>
+
+
+  <!-- Navbar (sit on top) -->
+
+  <nav class="navbar navbar-expand-md navbar-dark" style="background-color:#00004b;">
+    <button class="navbar-toggler" type="button" data-target="#navbarTogglerDemo03" data-toggle="collapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link text-light" href="{% url 'home'%}">WHAT WE DO</a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" data-toggle="dropdown">MINISTRIES</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="{% url 'mercy' %}">Mercy Ministry</a>
+                    <a class="dropdown-item" href="{% url 'outreach' %}">Outreach Ministry</a>
+                    <a class="dropdown-item" href="{% url 'men' %}">Men Ministry</a>
+                    <a class="dropdown-item" href="{% url 'women' %}">Women Ministry</a>
+                    <a class="dropdown-item" href="{% url 'couples' %}">Couples Ministry</a>
+                    <a class="dropdown-item" href="{% url 'youths' %}">Youth Ministry</a>
+                    <a class="dropdown-item" href="{% url 'teens' %}">Teens Ministry</a>
+                    <a class="dropdown-item" href="{% url 'sundayschool' %}">Sunday School Ministry</a>
+                </div>
+            <li class="nav-item">
+                <a class="nav-link text-light" href ="{% url 'wwn'%}">WOMAN WEEP NOT MINISTRIES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href ="{% url 'projects'%}">PROJECTS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href ="{% url 'founder'%}">OUR FOUNDER</a>
+            </li>
+        </ul>
+
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><i class="fas fa-band-aid"></i>
+                <input type="hidden" name="cmd" value="_s-xclick" /><i class="fas fa-band-aid"></i>
+                <input type="hidden" name="hosted_button_id" value="3B9CM4PCW34S2" /><i class="fas fa-band-aid"></i>
+                <input type="submit" value="GIVE" type="button" name="submit" title="Support Our Ministry Work!" class="paypal_btn">
+                <img alt="" border="0" src="https://www.paypal.com/en_KE/i/scr/pixel.gif" width="1" height="1" /><i class="fas fa-band-aid"></i>
+                </form>
+    </div>
+
+  </nav>
+</div>
+<div class="jumbotron" style="background-color:#00004b">
+  <h1 class="display-4 text-light"><b>Woman Weep Not Ministry.</b></h1></br>
+  <hr class="my-1">
+    <p3 class="lead display-5 text-light">
+        <b>MISSION </b></br><br>
+        To reach the lost and hopeless woman with the gospel of Christ for salvation, minister God’s grace to the destitute women and the hurting,
+        reach the widows with the love of God for fulfilled life, and stir up single women to maximize on their lives for God.
+    </p3>
+</div>
+<div class="jumbotron" style="background-color:	#FFFFFF">
+  <img src="{% static 'chavakali/img/wwn/Mellen.jpeg' %}"  alt="..." id="divWwncover" class="float-left" height="355px" width="320px">
+    <h3 class="display-6 text-center">VISION</h3></br>
+    <p class="lead display-5 text-center">
+        Woman Weep Not Ministry is an interdenominational ministry to women that was founded by <b>Bishop Mellen Achanga</b>, with a vision of Raising up powerful women of integrity and victorious in the society
+        from all sorts of life through the word and grace of God. The vision focuses to seeing the lost woman saved, destitute lifted up, widow living a fulfilled
+        life and single maximizing on her single life.</br></br>
+
+        <b>The vision of this ministry is founded on Luke 7:13 When the Lord saw her, His heart went out to her and He said. “Woman weep not”</b>
+    </p>
+</div>
+<div class = "jumbotron" style="background-color:#00004b">
+    <h3 class="display-7 text-light">OBJECTIVES</h3></br>
+    <p class="lead display-5 text-light">
+        •	To raise up teams of women to do the work of evangelism with a focus to women and their children, in Kenya and beyond the boundaries of Kenya.</br>
+        •	To inspire, stir up and challenge women in faith to identify their positions in the church and society while standing with and serving under servants of God from their respective churches and ministries.</br>
+        •	To establish strong and God fearing families through fellowship and ministry.</br>
+        •	To help the poor, needy, and disadvantaged women in the community who are physically and spiritually depressed and oppressed.</br>
+        •	To encourage unity in the body of Christ by networking with churches</br>
+
+    </p>
+</div>
+<div class="jumbotron">
+
+    <h3 class="display-6 text-left">ACTIVITIES</h3></br>
+    <p class="lead display-5 text-left">
+        •	Organize evangelistic missions for soul winning, reaching women through media, and speaking in engagements.</br>
+        •	Do regular seminars and Christian rallies to specific groups of women (widows, singles and married) as well as impacting conferences for all.</br>
+        •	Carry out a premarital guiding and counseling sessions to those planning to marry and marital counseling to the married.</br>
+        •	Hosts monthly prayer meetings for women.</br>
+        •	Build the capacity of women in entrepreneurship to be able to start income generating ventures to support their families and the work of God.</br>
+        •	Show act of charity to the poor and disadvantaged women in the community.</br>
+    </p>
+</div>
+<div class ="jumbotron" style ="background-color:#00004b;">
+   <footer>
+            <section class="bg-4B004B text-light">
+                  <div class="container">
+                        <div class="row">
+                              <div class="col-lg-4">
+                                    <h2>JCC Chavakali-Kenya</h2>
+                                    <p class="u-my-40">
+                                          An Oasis Of God's love and Care<br>
+                                        Gving Hope to the Hopeless<br><br>
+                                        @2019 Joy Celebration Centre<br>
+                                        All Rights Reserved
+                                    </p>
+                              </div>
+                              <div class="col-lg-2 ml-auto text-light" >
+                                    <h4 class ="text-light">Useful Links</h4>
+                                    <div class="u-h-4 u-w-50 bg-#4B004B mt-3 u-mb-40 text-light">
+                                    <ul class="list-unstyled u-lh-2 text-light">
+                                         <a href="{% url 'events' %} text-light" style="color:white" id="events">Events</a><br>
+                                         <a href="{% url 'youths' %} text-light" style="color:white" >Youths</a><br>
+                                         <a href="{% url 'teens' %} text-light" style="color:white" >Teenagers</a><br>
+                                         <a href="{% url 'sundayschool' %} text-light" style="color:white" >Sunday School</a>
+
+
+                                    </ul>
+
+
+                              </div>
+                              </div>
+                              <div class="col-lg-3 ml-auto">
+                                    <h4>Contact Info</h4>
+                                    <div class="u-h-4 u-w-50 bg-white rounded mt-3 u-mb-40"></div>
+                                    <ul class="list-unstyled">
+                                          <li class="mb-2">
+                                                <span class="icon icon-Phone2 text-primary mr-2"></span> +254722396050
+                                          </li>
+                                          <li class="mb-2">
+                                                <span class="icon icon-Mail text-primary mr-2"></span>agapechavakali@gmail.com
+                                          </li>
+                                          <li class="mb-2">
+                                                <span class="icon icon-Pointer text-primary mr-2"></span> Chavakali, Kenya
+                                          </li>
+                                    </ul>
+                                    <ul class="list-inline social mt-4">
+                                          <a href="https://www.facebook.com/JCC-Chavakali-Agape-Fellowship-223645461127111/" class="fa fa-facebook"></a>
+                                            <a href="https://twitter.com/jcc_chavakali" class="fa fa-twitter"></a>
+                                          <a href="https://www.youtube.com/channel/UC0ECR7uZJXs65Ndeio9HKQA?view_as=subscriber" class="fa fa-youtube"></a>
+                                        <a href="https://www.instagram.com/jcc_chavakali/" style="color:white" class="fa fa-instagram"></a>
+                                    </ul>
+                              </div>
+                        </div>
+                  </div>
+            </section>
+            <div class="container text-center p-4 text-light">
+                  <p class="mb-0">
+                        Build with Enam Technology Solutions
+                  </p>
+            </div>
+      </footer>
+
+</div>
+
+</div>
+<style type="text/css">
+    /* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.9;
+  color : white
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  color: white;
+}
+
+/* Youtube */
+.fa-youtube {
+  color: white;
+}
+
+/* Whatsapp */
+.fa-whatsapp {
+  color: white;
+}
+</style>
+</body>
+{% endblock %}

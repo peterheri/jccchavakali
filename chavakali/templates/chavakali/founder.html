@@ -1,0 +1,211 @@
+{% extends "chavakali/base.html" %}
+{% load static %}
+
+{% block title %}
+<title>Founder</title>
+{% endblock %}
+
+{% block body %}
+<div class="spinner-grow" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<body class="landing">
+<style type="text/css">
+			.paypal_btn{
+            display: inline-block;
+            font-family: inherit;
+            font-size: 15px;
+            color: #fff;
+            text-align: center;
+            padding: 10px 10px;
+            margin: 0;
+            background:#0000FF ;
+            border: 0;
+            cursor: pointer;
+            outline: primary;
+            }
+            .paypal_btn:hover{ background: #e05c04; }
+
+		</style>
+
+
+  <!-- Navbar (sit on top) -->
+
+  <nav class="navbar navbar-expand-md navbar-dark" style="background-color:#5B2C6F;">
+    <button class="navbar-toggler" type="button" data-target="#navbarTogglerDemo03" data-toggle="collapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link text-light" href="{% url 'home'%}">WHAT WE DO</a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" data-toggle="dropdown">MINISTRIES</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="{% url 'mercy' %}">Mercy Ministry</a>
+                    <a class="dropdown-item" href="{% url 'outreach' %}">Outreach Ministry</a>
+                    <a class="dropdown-item" href="{% url 'men' %}">Men Ministry</a>
+                    <a class="dropdown-item" href="{% url 'women' %}">Women Ministry</a>
+                    <a class="dropdown-item" href="{% url 'couples' %}">Couples Ministry</a>
+                    <a class="dropdown-item" href="{% url 'youths' %}">Youth Ministry</a>
+                    <a class="dropdown-item" href="{% url 'teens' %}">Teens Ministry</a>
+                    <a class="dropdown-item" href="{% url 'sundayschool' %}">Sunday School Ministry</a>
+                </div>
+            <li class="nav-item">
+                <a class="nav-link text-light" href ="{% url 'wwn'%}">WOMAN WEEP NOT MINISTRIES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href ="{% url 'projects'%}">PROJECTS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href ="{% url 'founder'%}">OUR FOUNDER</a>
+            </li>
+        </ul>
+
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><i class="fas fa-band-aid"></i>
+                <input type="hidden" name="cmd" value="_s-xclick" /><i class="fas fa-band-aid"></i>
+                <input type="hidden" name="hosted_button_id" value="3B9CM4PCW34S2" /><i class="fas fa-band-aid"></i>
+                <input type="submit" value="GIVE" type="button" name="submit" title="Support Our Ministry Work!" class="paypal_btn">
+                <img alt="" border="0" src="https://www.paypal.com/en_KE/i/scr/pixel.gif" width="1" height="1" /><i class="fas fa-band-aid"></i>
+                </form>
+    </div>
+
+  </nav>
+</div>
+<div class="jumbotron" style = "background-color:#5B2C6F;">
+  <h1 class="display-4 text-light"><b>Joy Celebration Centre Chavakali.</b></h1></br>
+  <p class="lead display-5 text-light"><p5>Agape Fellowship Center</p5></p>
+  <hr class="my-1">
+    <p class="text-light">Our Founder</p>
+  </div>
+
+<div class="container-fluid">
+ <img alt="Bishop" src="{% static 'chavakali/img/founder/Bishop.jpg' %}" id="sdivBishop" class="float-left" class="rounded-circle" height="600" width="500">
+    <p class="text-dark text-left">
+        <b> Bishop Evans Achanga</b> is currently the Senior Pastor of Joy Celebration Center, Agape Fellowship Center Chavakali, <br>assisted by <b>Reverend Mr/Mrs Jairus and Rosemary Ounza</b> as the Assistant Pastor.</br></br> Bishop Evans Achanga is married to <b>Mellen Achanga</b> and they are blessed with two sons; <b>Peter Heri</b> and <b>Demetrius Fadhili</b>.</br>
+
+In 1985, Bishop Evans accepted Jesus Christ as Lord and saviour of his life while in high school and this created in him a hunger and thirst of knowing God more and telling others about Him. While in college in 1988 pursuing his accounts course, the zeal of God couldn’t keep him silent for he continually witnessed to everyone he had opportunity to.</br></br></br> After college he went and submitted under a man of God where he served for thirteen years. It was at this time that he started sensing the call of God upon his life.
+
+Before launching a new church, while praying and fasting it was impressed on his heart that he needed a man of God as a spiritual father/guide and God led him to Bishop Dr Steve Kabachia the founder and presiding bishop of Agape Fellowship Centre who has remained to be a great mentor and father in his life.
+
+Dr Kabachia took him as a son and together with Agape leadership made him an overseer of Agape churches in the entire western part of Kenya as far as beyond the borders of Uganda and Tanzania. By God’s grace he has been able to plant new churches in this area. He also serves as a member of Apostolic Council of Agape which is a top most organ of the ministry.</br></br> </br>By God’s grace, on 19th August 2012 he was consecrated in the office of Bishop to work as a First vice chairman to the Presiding bishop.
+
+Apart from ministry work, he also pursued accounts course until the end of 1989 when he secured an employment with a secondary school as an accounts clerk for six years before joining a Non Governmental Organization as an accountant while at the same time pursuing a diploma in Business Administration.  He served in NGO world for more than ten years till late 2007 when he resigned in the position of Finance and Administration officer in order to concentrate on ministry work. With rich experience in NGO world, he was requested by three organizations to serve on their boards which he consented. He is therefore a board member of three National Non-Governmental Organizations.<br><br>
+
+However, because his passion and priority was/is in ministry, in 2005 he started his journey of Bible College which he is still on. He is currently taking his masters degree in Christian Ministry. He is also a board member to three Bible Colleges and a lecturer.</br></br></br>
+
+His strongest areas of ministry are:</br></br>
+1.	<b>Youth ministry</b> which he has been doing since 1989 on three levels: village level, high school level and college level with a focus on academic excellence and living a life of purity. He does counseling to teens and youth especially when outreaching schools and colleges.</br></br>
+        2.<b> Family relationships.</b> He is involved in both pre-marital and marital counseling by hosting seminars, involvement in engagements and radio ministry.</br></br>
+        3.	<b>Evangelism/church</b> planting and grounding believers in faith through teachings.  He ministers in crusades, conferences, seminars and revival meetings.</br></br>
+        4.	<b>Leadership development.</b>
+
+    </p>
+
+</div>
+<div class ="jumbotron" style ="background-color:#5B2C6F;">
+   <footer>
+            <section class="bg-4B004B text-light">
+                  <div class="container">
+                        <div class="row">
+                              <div class="col-lg-4">
+                                    <h2>JCC Chavakali-Kenya</h2>
+                                    <p class="u-my-40">
+                                          An Oasis Of God's love and Care<br>
+                                        Gving Hope to the Hopeless<br><br>
+                                        @2019 Joy Celebration Centre<br>
+                                        All Rights Reserved
+                                    </p>
+                              </div>
+                              <div class="col-lg-2 ml-auto text-light" >
+                                    <h4 class ="text-light">Useful Links</h4>
+                                    <div class="u-h-4 u-w-50 bg-#4B004B mt-3 u-mb-40 text-light">
+                                    <ul class="list-unstyled u-lh-2 text-light">
+                                         <a href="{% url 'events' %} text-light" style="color:white" id="events">Events</a><br>
+                                         <a href="{% url 'youths' %} text-light" style="color:white" >Youths</a><br>
+                                         <a href="{% url 'teens' %} text-light" style="color:white" >Teenagers</a><br>
+                                         <a href="{% url 'sundayschool' %} text-light" style="color:white" >Sunday School</a>
+
+
+                                    </ul>
+
+
+                              </div>
+                              </div>
+                              <div class="col-lg-3 ml-auto">
+                                    <h4>Contact Info</h4>
+                                    <div class="u-h-4 u-w-50 bg-white rounded mt-3 u-mb-40"></div>
+                                    <ul class="list-unstyled">
+                                          <li class="mb-2">
+                                                <span class="icon icon-Phone2 text-primary mr-2"></span> +254722396050
+                                          </li>
+                                          <li class="mb-2">
+                                                <span class="icon icon-Mail text-primary mr-2"></span>agapechavakali@gmail.com
+                                          </li>
+                                          <li class="mb-2">
+                                                <span class="icon icon-Pointer text-primary mr-2"></span> Chavakali, Kenya
+                                          </li>
+                                    </ul>
+                                    <ul class="list-inline social mt-4">
+                                          <a href="https://www.facebook.com/JCC-Chavakali-Agape-Fellowship-223645461127111/" class="fa fa-facebook"></a>
+                                            <a href="https://twitter.com/jcc_chavakali" class="fa fa-twitter"></a>
+                                          <a href="https://www.youtube.com/channel/UC0ECR7uZJXs65Ndeio9HKQA?view_as=subscriber" class="fa fa-youtube"></a>
+                                        <a href="https://www.instagram.com/jcc_chavakali/" style="color:white" class="fa fa-instagram"></a>
+                                    </ul>
+                              </div>
+                        </div>
+                  </div>
+            </section>
+            <div class="container text-center p-4 text-light">
+                  <p class="mb-0">
+                        Build with Enam Technology Solutions
+                  </p>
+            </div>
+      </footer>
+
+</div>
+
+</div>
+<style type="text/css">
+    /* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.9;
+  color : white
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  color: white;
+}
+
+/* Youtube */
+.fa-youtube {
+  color: white;
+}
+
+/* Whatsapp */
+.fa-whatsapp {
+  color: white;
+}
+</style>
+</body>
+{% endblock %}

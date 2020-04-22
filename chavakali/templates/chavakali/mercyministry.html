@@ -1,0 +1,253 @@
+{% extends "chavakali/base.html" %}
+{% block title %}
+<title>Mercy Ministry</title>
+{% endblock %}
+
+{% block body %}
+
+<body>
+<style type="text/css">
+			.paypal_btn{
+            display: inline-block;
+            font-family: inherit;
+            font-size: 15px;
+            color: #fff;
+            text-align: center;
+            padding: 10px 10px;
+            margin: 0;
+            background:#0000FF ;
+            border: 0;
+            cursor: pointer;
+            outline: primary;
+            }
+            .paypal_btn:hover{ background: #e05c04; }
+
+		</style>
+<nav class="navbar navbar-expand-md navbar-dark" style="background-color:#5B2C6F">
+    <button class="navbar-toggler" type="button" data-target="#navbarTogglerDemo03" data-toggle="collapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link text-light" href="{% url 'home'%}">WHAT WE DO</a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" data-toggle="dropdown">MINISTRIES</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="{% url 'mercy' %}">Mercy Ministry</a>
+                    <a class="dropdown-item" href="{% url 'outreach' %}">Outreach Ministry</a>
+                    <a class="dropdown-item" href="{% url 'men' %}">Men Ministry</a>
+                    <a class="dropdown-item" href="{% url 'women' %}">Women Ministry</a>
+                    <a class="dropdown-item" href="{% url 'couples' %}">Couples Ministry</a>
+                    <a class="dropdown-item" href="{% url 'youths' %}">Youth Ministry</a>
+                    <a class="dropdown-item" href="{% url 'teens' %}">Teens Ministry</a>
+                    <a class="dropdown-item" href="{% url 'sundayschool' %}">Sunday School Ministry</a>
+                </div>
+            <li class="nav-item">
+                <a class="nav-link text-light" href ="{% url 'wwn'%}">WOMAN WEEP NOT MINISTRIES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href ="{% url 'projects'%}">PROJECTS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href ="{% url 'founder'%}">FOUNDER</a>
+            </li>
+        </ul>
+
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><i class="fas fa-band-aid"></i>
+                <input type="hidden" name="cmd" value="_s-xclick" /><i class="fas fa-band-aid"></i>
+                <input type="hidden" name="hosted_button_id" value="3B9CM4PCW34S2" /><i class="fas fa-band-aid"></i>
+                <input type="submit" value="GIVE" type="button" name="submit" title="Support Our Ministry Work!" class="paypal_btn">
+                <img alt="" border="0" src="https://www.paypal.com/en_KE/i/scr/pixel.gif" width="1" height="1" /><i class="fas fa-band-aid"></i>
+                </form>
+    </div>
+
+  </nav>
+</div>
+<div class="jumbotron" style="background-color:#5B2C6F">
+  <h1 class="display-4 text-light"><b>Joy Celebration Centre Chavakali.</b></h1></br>
+    <p class="lead display-5 text-light"><p5>Agape Fellowship Centre.</p5></p>
+  <p class="lead display-5 text-light"><p5>Mercy Ministry.</p5></p>
+  <hr class="my-1">
+
+</div>
+<div class="jumbotron" id="divMercyfooter">
+<div class="card-deck">
+  <div class="card bg-info" style = "background-color:#4B004B;">
+    <div class="card-body">
+
+      <h5 class="card-title">Vision</h5>
+        <p class="card-text">To be a lead Community Based organization in Vihiga county transforming hopeless lives to qualitative living.</br></br>
+            <b>Mathew 25:35</b>
+          35 For I was hungry and you gave me something to eat, I was thirsty and you gave me something to drink, I was a stranger and you invited me in, 36 I needed clothes and you clothed me, I was sick and you looked after me, I was in prison and you came to visit me.’
+      </p>
+      <p class="card-text"><small class="text-muted">Mercy Ministry Vision</small></p>
+    </div>
+  </div>
+  <div class="card mb-3" style = "background-color:#5B2C6F;">
+    <div class="card-body">
+      <h5 class="card-title">Mission</h5>
+      <p class="card-text">JCC Mercy Ministry is a Community Based Organization that was established in 2005 and registered by the Kenya Government under the ministry of Culture and Social Services with its main office in Chavakali town Vihiga County. Our main objective is to develop, support, promote, and enhance creative solutions to problems that impede social development in our society in order to ensure qualitative living. </p>
+      <p class="card-text"><small class="text-muted">Mercy Ministry Mission</small></p>
+    </div>
+  </div>
+  <div class="card bg-dark" style = "background-color:#4B004B;">
+    <div class="card-body">
+      <h5 class="card-title">Our Focus</h5>
+      <p class="card-text">Our activity in the region therefore focuses on small enterprise development, environmental programmes, provision of basic needs and guiding & counselling for the disadvantaged children as well as HIV/AIDS infected and affected persons.</p>
+      <p class="card-text"><small class="text-muted">We are the Light Of the World</small></p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+    </p>
+</div>
+</body>
+<div class = "jumbotron" style="background-color:#5B2C6F">
+    <h3 class="display-7 text-light">OUR TARGET GROUPS IN THE COMMUNITY ARE : </h3></br>
+    <p class="lead display-5 text-light">
+        1.	Widows and widowers</br>
+        2.	Orphans as a result of HIV/ AIDS</br>
+        3.	People living with AIDS (PLWAs)</br>
+        4.	The jobless youth</br></br>
+    </p>
+</div>
+<div class = "jumbotron" id="divTechnicalAreas">
+    <h3 class="display-7">THE TECHNICAL AREAS WE FOCUS ON ARE :</h3></br>
+    <p class="lead display-5 text-light">
+        (i). Prevention of Mother to Child Transmission of HIV (PMTCT).</br></br>
+        (ii). Voluntary counseling and Testing services(VCT).</br></br>
+        (iii). Adult Care and Treatment.</br></br>
+    </p>
+</div>
+<div class ="jumbotron" style="background-color:#5B2C6F">
+    <p class="lead display-5 text-light">
+    Deuteronomy 15:7-8, 10-11
+
+“If there is among you a poor man of your brethren, within any of the gates in your land which the Lord your God is giving you, you shall not harden your heart nor shut your hand from your poor brother, but you shall open your hand wide to him and willingly lend him sufficient for his need, whatever he needs. You shall surely give to him, and your heart should not be grieved when you give to him, because for this thing the Lord your God will bless you in all your works and in all to which you put your hand. For the poor will never cease from the land; therefore I command you, saying, ‘You shall open your hand wide to your brother, to your poor and your needy, in your land.”
+
+
+    </p>
+</div>
+<div class ="jumbotron" id="divMercycover">
+<p class= "text-light">
+    <h3 class="display-7 text-light">THE I CARE PROGRAMME</h3></br>
+    <p class="lead display-5 text-light">
+    <b>JCC MERCY MINISTRY, with support from members of the JCC Agape Fellowship Church- Chavakali, initiated the ‘I care Programme’ in 2004. This programme collect food stuffs, clothes and other house wares from well wishers and distribute to widows and orphaned children in Sabatia district in Vihiga County.
+    Every 25th day of December, the I care programme puts a smile on the faces of the widows, widowers and orphaned children
+        The “I Care programme” is also paying school fees for some orphaned children. Apart from members of JCC Agape Fellowship church who are the main supporters of the programme, the programme has also received support from the Vihiga mayor’s office, the Vihiga District Commissioner’s office and Tridah enterprises.</b>
+    </p>
+</div>
+<div class ="jumbotron" style ="background-color:#5B2C6F">
+   <footer>
+            <section class="bg-4B004B text-light">
+                  <div class="container">
+                        <div class="row">
+                              <div class="col-lg-4">
+                                    <h2>JCC Chavakali-Kenya</h2>
+                                    <p class="u-my-40">
+                                          An Oasis Of God's love and Care<br>
+                                        Gving Hope to the Hopeless<br><br>
+                                        @2019 Joy Celebration Centre<br>
+                                        All Rights Reserved
+                                    </p>
+                              </div>
+                              <div class="col-lg-2 ml-auto text-light" >
+                                    <h4 class ="text-light">Useful Links</h4>
+                                    <div class="u-h-4 u-w-50 bg-#4B004B mt-3 u-mb-40 text-light">
+                                    <ul class="list-unstyled u-lh-2 text-light">
+                                         <a href="{% url 'events' %} text-light" style="color:white" id="events">Events</a><br>
+                                         <a href="{% url 'youths' %} text-light" style="color:white" >Youths</a><br>
+                                         <a href="{% url 'teens' %} text-light" style="color:white" >Teenagers</a><br>
+                                         <a href="{% url 'sundayschool' %} text-light" style="color:white" >Sunday School</a>
+
+
+                                    </ul>
+
+
+                              </div>
+                              </div>
+                              <div class="col-lg-3 ml-auto">
+                                    <h4>Contact Info</h4>
+                                    <div class="u-h-4 u-w-50 bg-white rounded mt-3 u-mb-40"></div>
+                                    <ul class="list-unstyled">
+                                          <li class="mb-2">
+                                                <span class="icon icon-Phone2 text-primary mr-2"></span> +254722396050
+                                          </li>
+                                          <li class="mb-2">
+                                                <span class="icon icon-Mail text-primary mr-2"></span>agapechavakali@gmail.com
+                                          </li>
+                                          <li class="mb-2">
+                                                <span class="icon icon-Pointer text-primary mr-2"></span> Chavakali, Kenya
+                                          </li>
+                                    </ul>
+                                    <ul class="list-inline social mt-4">
+                                          <a href="https://www.facebook.com/JCC-Chavakali-Agape-Fellowship-223645461127111/" class="fa fa-facebook"></a>
+                                            <a href="https://twitter.com/jcc_chavakali" class="fa fa-twitter"></a>
+                                          <a href="https://www.youtube.com/channel/UC0ECR7uZJXs65Ndeio9HKQA?view_as=subscriber" class="fa fa-youtube"></a>
+                                        <a href="https://www.instagram.com/jcc_chavakali/" style="color:white" class="fa fa-instagram"></a>
+                                    </ul>
+                              </div>
+                        </div>
+                  </div>
+            </section>
+            <div class="container text-center p-4 text-light">
+                  <p class="mb-0">
+                        Build with Enam Technology Solutions
+                  </p>
+            </div>
+      </footer>
+
+</div>
+
+<style type="text/css">
+    /* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.9;
+  color : green;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  color: white;
+}
+
+/* Youtube */
+.fa-youtube {
+  color: white;
+}
+
+/* Whatsapp */
+.fa-whatsapp {
+  color: white;
+}
+</style>
+<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+</body>
+{% endblock %}

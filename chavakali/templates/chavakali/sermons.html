@@ -1,0 +1,47 @@
+{% extends "chavakali/base.html" %}
+{% block title %}
+<title>Sermons</title>
+{% endblock %}
+
+{% block body %}
+<body>
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark nav-justified-center fixed-top">
+    <a class ="navbar-brand" href="#"></a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-1">
+        <li class = "nav-item active">
+          <a class="nav-link" href="{% url 'home'%}">WHAT WE DO</a>
+        </li>
+    <br class="nav-dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">MINISTRIES<span class="sr-only">(current)</span></a></br>
+            <div class ="dropdown-menu">
+                <a class="dropdown-item text-dark" href="{% url 'mercy' %}">Mercy Ministry</a>
+                <a class="dropdown-item text-dark" href="{% url 'men' %}">Men Ministry</a>
+                <a class="dropdown-item text-dark" href="{% url 'women' %}">Womens Ministry</a>
+                <a class="dropdown-item text-dark" href="{% url 'couples' %}">Couples Ministry</a>
+                <a class="dropdown-item text-dark" href="{% url 'youths' %}">Youths Ministry</a>
+                <a class="dropdown-item text-dark" href="{% url 'teens' %}">Teens Ministry</a>
+                <a class="dropdown-item text-dark" href="{% url 'sundayschool' %}">Sunday School Ministry</a>
+                <div class="dropdown-divider"></div>
+            </div>
+    </li>
+
+                <a class="nav-item nav-link" href="{% url 'wwn' %}">WOMAN WEEP NOT MINISTRY </a>
+                <a class="nav-item nav-link" href="{% url 'projects' %}">PROJECTS</a>
+                <a class="nav-item nav-link" href="{% url 'founder' %}">OUR FOUNDER</a>
+                <a class="nav-item nav-link" href="{% url 'sermons' %}">SERMONS</a>
+                <a href="https://www.paypal.com/donate/?token=vQqagjFvstYymA8jLQtq_9z8-4gOxxpSST8ffl6f09z9L1bb8O1JVU8gUZRrqJtqbBwLxm&country.x=KE&locale.x=KE" class="btn btn-outline-primary" role="button" aria-pressed="true">GIVE NOW</a>
+
+    </ul>
+  </div>
+  </nav>
+</div>
+<div class="jumbotron">
+  <h1 class="display-4"><b>Joy Celebration Centre Chavakali.</b></h1>
+  <p class="lead display-5"><p5>Sermons.</p5></p>
+  <hr class="my-1">
+  <p3>Listen to our Sunday Sermons</p3>
+</div>
+</body>
+{% endblock %}
